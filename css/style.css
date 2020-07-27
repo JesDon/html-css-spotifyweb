@@ -4,12 +4,16 @@
   padding: 0;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .page-wrapper{
   height: 100vh;
 }
 
 main{
-  height: calc(100% - 90px);
+  height: calc(100% - 70px);
 }
 
 .main-content{
@@ -19,15 +23,89 @@ main{
   margin-left: 200px;
 }
 
+/* ASIDE */
 aside{
   background-color: black;
   position: fixed;
-  height: calc(100% - 90px);
+  height: calc(100% - 70px);
   width: 200px;
+  padding: 15px;
+  color: #919496;
 }
+
+aside .spotify-logo{
+  width: 130px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+aside ul{
+  list-style: none;
+}
+
+aside li{
+  padding-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+aside li:hover{
+  color: white;
+}
+
+aside h4{
+  font-weight: bold;
+  color: white;
+}
+
+.aside-top{
+  padding-bottom: 20px;
+}
+
+.aside-btn{
+  height: 30px;
+  width: 30px;
+  background-color: #919496;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin: 15px 0 15px 0;
+  cursor: pointer;
+}
+
+.aside-btn:hover{
+  background-color: white;
+}
+
+aside span{
+  cursor: pointer;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.fa-info-circle{
+  font-size: 10px;
+}
+
+aside a{
+  text-decoration: none;
+  color: #919496;
+  padding-bottom: 15px;
+  font-size: 12px;
+  padding-left: 8px;
+}
+
+aside a:hover{
+  color: white;
+}
+
+.aside-bottom .fa-user-circle{
+  font: 20px;
+}
+/* /ASIDE */
 
 footer{
   background-color: grey;
   position: fixed;
-  height: 90px;
+  height: 70px;
 }
