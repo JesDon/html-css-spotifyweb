@@ -132,6 +132,38 @@ aside span{
 }
 /* /ASIDE */
 
+/* UPGRADE-BAR */
+.upgrade{
+   position: fixed;
+   top: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   width: calc(100% - 200px);
+   height: 70px;
+   z-index: 1;
+}
+
+.upgrade-btn{
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: #080B12;
+  font-size: 10px;
+  padding: 12px 30px 12px 30px;
+  float: right;
+  margin: 15px 35px;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover{
+  background-color: #ADFF2F;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+/* /UPGRADE-BAR */
+
+
 /* MAIN CONTENT */
 .main-content{
   background-color: #141922;
@@ -144,12 +176,13 @@ aside span{
 
 .main-content img{
   width: 170px;
+  cursor: pointer;
 }
 
 .main-content h3{
   color: white;
   font-weight: bolder;
-  padding: 20px 0 5px 0;
+  padding: 15px 0 5px 0;
   font-size: 22px;
   margin-top: 20px;
 }
@@ -174,51 +207,59 @@ aside span{
   text-align: center;
 }
 
-/* UPGRADE-BAR */
-.upgrade{
-   position: fixed;
-   top: 0;
-   right: 0;
-   background-color: rgba(0, 0, 0, 0.6);
-   width: calc(100% - 200px);
-   height: 70px;
-   z-index: 1;
-}
-
-.upgrade-btn{
-  color: white;
-  border: 1px solid white;
-  border-radius: 30px;
-  background-color: #080B12;
-  font-size: 10px;
-  padding: 12px;
-  float: right;
-  margin: 15px 35px;
-  cursor: pointer;
-}
-
-.upgrade-btn:hover{
-  background-color: #b3b3b3;
-}
-/* /UPGRADE-BAR */
-
 /* MAIN-MENU */
 .top-menu{
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .top-menu li{
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 70px;
   padding: 0 13px 0 13px;
   cursor: pointer;
   font-size: 12px;
   color: #b3b3b3;
   font-weight: bold;
+  width: auto;
+}
+
+.top-menu li:hover{
+  color: white;
+  border-bottom: 1px solid #ADFF2F;
+  padding-bottom: 5px;
 }
 /* /MAIN-MENU */
 
 /* MAIN-SECTIONS */
+.img-box{
+  position: relative;
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-box:hover .overlay{
+  display: block;
+  cursor: pointer;
+}
+
+.overlay i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #b3b3b3;
+}
+
 .first-section h3{
   padding: 20px 0 20px 0;
 }
@@ -234,5 +275,47 @@ footer{
   background-color: #282828;
   position: fixed;
   height: 70px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center ;
+}
+
+footer img{
+  width: 40px;
+}
+
+footer h6{
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+
+footer p{
+  color: #b3b3b3;
+  font-size: 11px;
+}
+
+.footer-left{
+  background-color: yellow;
+  width: calc(100% - 1000px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.footer-center{
+  background-color: lightblue;
+  width: calc(100% - 700px);
+  float: left;
+  display: flex;
+}
+
+.footer-right{
+  background-color: pink;
+  width: calc(100% - 1000px);
+  float: left;
+  display: flex;
 }
 /* /FOOTER */
