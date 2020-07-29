@@ -303,8 +303,23 @@ aside span{
 .first-section h3{
   padding: 20px 0 20px 0;
 }
+
 .third-section img{
   border-radius: 50%;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .main-content img{
+    width: 170px;
+  }
+
+  .main-content li{
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
 }
 /* /MAIN-SECTIONS */
 /* /MAIN CONTENT */
@@ -323,39 +338,65 @@ footer{
 
 footer img{
   width: 40px;
+  vertical-align: middle;
+  margin: 0 8px 0 10px;
 }
 
 footer h6{
   font-weight: bold;
   color: white;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 footer p{
   color: #b3b3b3;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .footer-left{
-  background-color: yellow;
-  width: calc(100% - 1000px);
+  width: calc(100% / 4);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   vertical-align: middle;
 }
 
+.footer-left .icons{
+  color: #535353;
+  font-size: 15px;
+}
+
 .footer-center{
-  background-color: lightblue;
-  width: calc(100% - 700px);
+  width: calc(100% / 2);
+  float: left;
+  text-align: center;
+}
+
+.footer-center .icons{
+  color: white;
+  font-size: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.footer-center .icons-sm{
+  color: white;
+  font-size: 15px;
+}
+
+.footer-center i{
+  padding-left: 15px;
+}
+
+.footer-right{
+  width: calc(100% / 4);
   float: left;
   display: flex;
 }
 
-.footer-right{
-  background-color: pink;
-  width: calc(100% - 1000px);
-  float: left;
-  display: flex;
+.footer-right .icons{
+  color: #b3b3b3;
+  font-size: 15px;
+  line-height: 70px;
 }
 /* /FOOTER */
