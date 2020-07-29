@@ -38,6 +38,7 @@ aside{
   padding: 15px;
   color: #b3b3b3;
   font-weight: bold;
+  z-index: 10;
 }
 
 aside .spotify-logo{
@@ -130,6 +131,44 @@ aside span{
 .aside-bottom hr{
   margin: 10px 0 10px 0;
 }
+
+.spotify-logo-small{
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px){
+  aside{
+    width: 50px;
+  }
+  .spotify-logo{
+    display: none;
+  }
+  .aside-top{
+    height: calc(100% - 90px);
+  }
+  .aside-top span{
+    display: none;
+  }
+  .aside-center{
+    display: none;
+  }
+  .aside-bottom span{
+    display: none;
+  }
+  .aside-bottom hr{
+    display: none;
+  }
+
+  .aside-bottom i{
+    padding: 0 0 10px 5px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .spotify-logo-small{
+    display: none;
+  }
+}
 /* /ASIDE */
 
 /* UPGRADE-BAR */
@@ -151,7 +190,7 @@ aside span{
   font-size: 10px;
   padding: 12px 30px 12px 30px;
   float: right;
-  margin: 15px 35px;
+  margin: 15px 30px;
   cursor: pointer;
 }
 
@@ -211,6 +250,7 @@ aside span{
 .top-menu{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .top-menu li{
