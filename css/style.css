@@ -158,7 +158,6 @@ aside span{
   .aside-bottom hr{
     display: none;
   }
-
   .aside-bottom i{
     padding: 0 0 10px 5px;
   }
@@ -372,6 +371,7 @@ footer p{
   cursor: pointer;
 }
 
+/* FOOTER LEFT */
 .footer-left{
   width: 200px;
   height: 100%;
@@ -381,8 +381,8 @@ footer p{
   vertical-align: middle;
 }
 
-.footer-left .footer-text{
-  margin-right: 80px;
+.footer-img{
+  width: 10%;
 }
 
 .footer-left .icons{
@@ -394,7 +394,9 @@ footer p{
   color: white;
   cursor: pointer;
 }
+/* FOOTER /LEFT */
 
+/* FOOTER CENTER */
 .footer-center{
   height: 100%;
   display: flex;
@@ -416,7 +418,9 @@ footer p{
 .footer-center i{
   padding-left: 15px;
 }
+/* FOOTER /CENTER */
 
+/* FOOTER RIGHT */
 .footer-right{
   width: 200px;
   height: 100%;
@@ -447,4 +451,5 @@ footer p{
     padding-left: 5px;
   }
 }
+/* /FOOTER RIGHT */
 /* /FOOTER */
