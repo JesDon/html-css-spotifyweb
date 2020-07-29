@@ -340,13 +340,16 @@ aside span{
 
 /* FOOTER */
 footer{
-  background-color: #282828;
-  position: fixed;
   height: 70px;
-  width: 100%;
-  bottom: 0;
+  background-color: #282828;
+}
+
+.player{
   display: flex;
-  justify-content: center ;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 footer img{
@@ -367,22 +370,28 @@ footer p{
 }
 
 .footer-left{
-  width: calc(100% / 4);
+  width: 340px;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   vertical-align: middle;
+  background: blue;
 }
 
+.footer-left .footer-text{
+  margin-right: 180px;
+}
 .footer-left .icons{
   color: #535353;
   font-size: 15px;
 }
 
 .footer-center{
-  width: calc(100% / 2);
-  float: left;
-  text-align: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-center .icons{
@@ -402,14 +411,19 @@ footer p{
 }
 
 .footer-right{
-  width: calc(100% / 4);
-  float: left;
+  width: 340px;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: blue;
+  vertical-align: middle;
 }
 
 .footer-right .icons{
   color: #b3b3b3;
   font-size: 15px;
   line-height: 70px;
+  padding-right: 10px;
 }
 /* /FOOTER */
