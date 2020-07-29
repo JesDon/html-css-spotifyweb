@@ -356,39 +356,46 @@ footer img{
   width: 40px;
   vertical-align: middle;
   margin: 0 8px 0 10px;
+  cursor: pointer;
 }
 
 footer h6{
   font-weight: bold;
   color: white;
   font-size: 11px;
+  cursor: pointer;
 }
 
 footer p{
   color: #b3b3b3;
   font-size: 10px;
+  cursor: pointer;
 }
 
 .footer-left{
-  width: 340px;
+  width: 200px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   vertical-align: middle;
-  background: blue;
 }
 
 .footer-left .footer-text{
-  margin-right: 180px;
+  margin-right: 80px;
 }
+
 .footer-left .icons{
   color: #535353;
   font-size: 15px;
 }
 
+.footer-left i:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .footer-center{
-  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -411,12 +418,11 @@ footer p{
 }
 
 .footer-right{
-  width: 340px;
+  width: 200px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: blue;
   vertical-align: middle;
 }
 
@@ -425,5 +431,20 @@ footer p{
   font-size: 15px;
   line-height: 70px;
   padding-right: 10px;
+}
+
+.footer-right i:hover{
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .footer-center .icons-sm{
+    color: white;
+    font-size: 12px;
+  }
+  .footer-center i{
+    padding-left: 5px;
+  }
 }
 /* /FOOTER */
